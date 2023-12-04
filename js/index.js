@@ -15,7 +15,7 @@ document.getElementById('pearson-form').addEventListener('submit', function(even
     event.preventDefault();
     var x = document.getElementById('x').value;
     var y = document.getElementById('y').value;
-    fetch('../py/pearson', {
+    fetch('/pearson', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
