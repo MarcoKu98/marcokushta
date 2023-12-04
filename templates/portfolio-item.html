@@ -33,7 +33,7 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                <strong>Title</strong>
+                <strong>Simple Pearson Correlation</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">subtitle</p>
             <!-- <img src="" alt="" class=""> -->
@@ -41,12 +41,26 @@
         
         <div class="portfolio-item-individual">
             <form id="pearson-form">
+                <input type="file" id="file-input">
+                <input type="button" id="load-button" value="Load">
+                <p>Please enter a CSV file that includes the data you want to analyse in column one and two.</p>
                 <input type="text" id="x" placeholder="Enter x">
                 <input type="text" id="y" placeholder="Enter y">
-                <input type="submit" value="Calculate">
+                <input type="button" id="add-button" value="Add">
+                <input type="button" id="calculate-button" value="Calculate">
             </form>
+            <div id="error"></div>
+            <table id="data-points">
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                </tr>
+            </table>
             <div id="results"></div>
+            <canvas id="scatter-plot"></canvas>
         </div>
+        
+        
         
         
         <!-- Footer -->
@@ -69,7 +83,9 @@
         
         
         <script src="../js/index.js"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+
         
     </body>
 </html>

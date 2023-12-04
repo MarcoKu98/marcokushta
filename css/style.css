@@ -419,3 +419,50 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+#pearson-form {
+    margin-bottom: 1em;
+}
+
+#pearson-form input[type="text"] {
+    margin: .5em;
+    padding: .5em;
+    font-size: 1em;
+}
+
+#pearson-form input[type="button"] {
+    padding: .5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: var(--clr-accent);
+    border: 1px solid #ced4da;
+    border-radius: .25em;
+    color: #fff;
+}
+
+#pearson-form input[type="button"]:hover {
+    background-color: #e9ecef;
+}
+
+#data-points {
+    width: 100%;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+}
+
+#data-points th, #data-points td {
+    border: 1px solid #dee2e6;
+    padding: .75em;
+    text-align: left;
+}
+
+#results {
+    padding: 1em;
+    border: 1px solid #dee2e6;
+    border-radius: .25em;
+    background-color: var(--clr-accent);
+}
+
+#scatter-plot {
+    background-color: var(--clr-light);
+}
