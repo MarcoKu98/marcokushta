@@ -338,7 +338,7 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-light);
     overflow: hidden;
 }
 
@@ -349,7 +349,7 @@ header {
 }
 
 .portfolio__item:focus {
-    position: relative;
+    position:relative;
     z-index: 2;
 }
 
@@ -411,6 +411,7 @@ header {
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;
+    
     margin: 0 auto;
 }
 
@@ -418,6 +419,10 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+.portfolio-item-individual-subtitle{
+    font-size: 1rem;
+    max-height:max-content;
 }
 
 #pearson-form {
@@ -441,7 +446,7 @@ header {
 }
 
 #pearson-form input[type="button"]:hover {
-    background-color: #e9ecef;
+    background-color: var(--clr-accent);
 }
 
 #data-points {
