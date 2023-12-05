@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Marco's Portfolio Website</title>
+        <title>Pearson Correlation</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <!-- Font style-->
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
         
         <link rel="stylesheet" href="../css/style.css">
-
+    
     </head>
+
+    <!-- Header -->
     <body>
         <header>
             <button class="nav-toggle" aria-label="toggle navigation">
@@ -28,15 +29,16 @@
             </nav>
         </header>
         
-
+        <!-- Project title and desc -->
         <section class="intro">
             <h1 class="section__title section__title--intro">
                 <strong>Pearson Correlation</strong>
             </h1>
-            <p class="portfolio-item-individual-subtitle">An app that takes in two values (x,y) which create a data point. After entering data points, you will be able to click the calculate button, which will provide means, standard deviation, Paerson Correlation Coefficient, and a basic interpretation. Additionally, a scatter plot will be populated with your data and provide you a regression </p>
+            <p class="portfolio-item-individual-subtitle">An app that takes in two values (x,y) which create a data point. After entering data points, you will be able to click the calculate button, which will provide means, standard deviation, Pearson Correlation Coefficient, and a basic interpretation. Additionally, a scatter plot will be populated with your data and provide you a regression </p>
             <p class="portfolio-item-individual-subtitle">You can enter values one by one with the add button, or you can pass in an Excel file (.xlsx) that contains the values in two columns.</p>
         </section>
         
+        <!-- Main Content -->
         <div class="portfolio-item-individual">
             <form id="pearson-form">
                 <input type="file" id="file-input">
@@ -63,7 +65,6 @@
         
         <!-- Footer -->
         <footer class="footer">
-            <!-- replace with your own email address -->
             <a href="mailto:marcokushta@gmail.com">marcokushta@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
@@ -79,7 +80,7 @@
             </ul>
         </footer>
         
-        
+        <!-- Scripts -->
         <script src="../js/index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
